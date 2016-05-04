@@ -2,7 +2,7 @@
 # VideoStore
 #
 
-OBJS=VideoStore.o Video.o Rental.o Customer.o
+OBJS=NetVideo.o Video.o Rental.o Customer.o
 TOBJS=Video_t.o Rental_t.o Customer_t.o
 EXE=VideoStore Video_t Rental_t Customer_t
 
@@ -20,7 +20,7 @@ run : VideoStore
 VideoStore : $(OBJS)
 	$(GCC) $^ -o $@
 
-VideoStore.o: VideoStore.cpp Video.hpp Rental.hpp Customer.hpp
+NetVideo.o: NetVideo.cpp Video.hpp Rental.hpp Customer.hpp
 	$(GCC) $(CFLAGS) -c $<
 
 # Video
