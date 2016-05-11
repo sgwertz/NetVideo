@@ -33,7 +33,7 @@ void Customer::addRental(const Rental& rental) {
 std::string Customer::statement() const {
 
     // customer name
-    std::string result("Rental Record for ");
+    std::string result("Streaming Record for ");
     result += getName();
     result += "\n";
 
@@ -85,7 +85,7 @@ std::string Customer::statement() const {
     }
 
     // total amount owed
-    result += "Amount owed is: ";
+    result += "Bill is: ";
     std::ostringstream out_str_stream;
     out_str_stream << totalAmount;
     result += out_str_stream.str();
