@@ -13,8 +13,9 @@
 int main() {
 
     // Videos
-    Video lotr("Lord of the Rings", Video::REGULAR);
-    Video hp("Harry Potter", Video::CHILDRENS);
+    Video gd("Ghost Dad", Video::REGULAR);
+    Video ph("Winnie the Pooh", Video::CHILDRENS);
+    Video 8("8 1/2", Video::REGULAR);
 
     // Rentals of these movies
     Rental r1(lotr, 10);
