@@ -7,14 +7,14 @@
 #include "Rental.hpp"
 
 // constructor
-Rental::Rental(const Video& movie, int days_rented)
-    : movie(movie), days(days_rented)
+Rental::Rental(const Video& movie, int weeks_rented)
+    : movie(movie), weeks(weeks_rented)
 { }
 
 // days rented
-int Rental::getDaysRented() const {
+int Rental::getWeeksRented() const {
 
-    return days;
+    return Weeks;
 }
 
 // movie rented

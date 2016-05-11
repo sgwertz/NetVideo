@@ -13,17 +13,17 @@ class Rental {
 public:
 
     // constructor
-    Rental(const Video& movie, int days_rented);
+    Rental(const Video& movie, int weeks_rented);
 
     // days rented
-    int getDaysRented() const;
+    int getWeeksRented() const;
 
     // movie rented
     const Video& getVideo() const;
 
 private:
     Video movie;
-    int days;
+    int weeks;
 };
 
 #endif
